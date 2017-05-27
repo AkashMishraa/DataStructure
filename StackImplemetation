@@ -1,0 +1,61 @@
+package com.akash.mishra;
+
+/**
+ *
+ * @author Akash
+ */
+public class StackImplement {
+    
+    private static final int stackSize = 5;
+    int[] array = new int[stackSize];
+    int top = -1;
+    
+    public void push(int stackElement){
+        if(top < stackSize-1 )
+        {
+            top++;
+        array[top] = stackElement;
+    } else {
+            
+            System.out.println("Stack is overflow");
+            
+        }
+    }
+    
+    public void pop(){
+        
+        if(top >= 0){
+            
+            top--;
+            
+        } else{
+            
+            System.out.println("Stack is underflow");
+            
+        }            
+    }
+    
+    public void printStack(){
+     
+        if(top >= 0){
+            
+            for(int i = 0; i <= top; i++){
+                
+                System.out.println(array[i]);
+                
+            }
+        }
+    }
+    public static void main(String args[]){
+        
+        StackImplement si = new StackImplement();
+        si.push(5);
+        si.push(6);
+        si.push(7);
+        si.push(8);
+        si.push(9);
+        si.pop();
+        si.pop();
+        si.printStack();
+    }
+}
