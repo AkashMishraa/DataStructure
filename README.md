@@ -1,4 +1,5 @@
-
+// Linked List Structure Code
+// Author @AkashMishraa
 
 public class LinkedList {
     Node head;
