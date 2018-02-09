@@ -72,9 +72,9 @@ class DleteNode{
     {
         if (root != null)
         {
-            inorderRec(root.left);
+            inorder(root.left);
             System.out.print(root.key + " ");
-            inorderRec(root.right);
+            inorder(root.right);
         }
     }
 

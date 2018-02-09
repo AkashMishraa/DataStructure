@@ -43,16 +43,16 @@ class BinarySearchTree
   }
 // inorder traversal on tree
   void printNode(Node root){
-    inorderRec(root);
+    inorder(root);
   }
 
   void inorder(Node root)
     {
         if (root != null)
         {
-            inorderRec(root.left);
+            inorder(root.left);
             System.out.print(root.key + " ");
-            inorderRec(root.right);
+            inorder(root.right);
         }
     }
 
