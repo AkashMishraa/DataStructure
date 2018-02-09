@@ -43,12 +43,18 @@ class BinarySearchTree
   }
 // inorder traversal on tree
   void printNode(Node root){
-      if(root != null){
-        printNode(root.left);
-        System.out.println(root.key);
-        printNode(root.right);
-      }
+    inorderRec(root);
   }
+
+  void inorder(Node root)
+    {
+        if (root != null)
+        {
+            inorderRec(root.left);
+            System.out.print(root.key + " ");
+            inorderRec(root.right);
+        }
+    }
 
   public static void main(String[] args) {
     BinarySearchTree bst = new BinarySearchTree();
@@ -61,6 +67,6 @@ class BinarySearchTree
     bst.insert(60);
 
     bst.printNode();
-    
+
   }
 }
