@@ -65,7 +65,7 @@ class DleteNode{
         return root;
     }
     void printNode(Node root){
-      inorderRec(root);
+      inorder(root);
     }
 
     void inorder(Node root)
